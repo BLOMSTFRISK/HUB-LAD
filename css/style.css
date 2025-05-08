@@ -94,7 +94,7 @@ html {
 
 
 .footer-custom {
-    background-color: #9676d8;
+    background-color: #3e2d4f ;
     color: white;
     text-align: center;
     padding: 2rem 1rem;
@@ -117,7 +117,7 @@ html {
   
   @media (min-width: 640px) {
     .footer-logo {
-      width: 5rem;
+      width: 4rem;
     }
   }
   
