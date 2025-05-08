@@ -13,6 +13,26 @@ html {
     scroll-behavior: smooth;
   }
 
+  .posicionada {
+    position: relative;
+  }
+  
+  .titulo-flotante-incubable {
+    position: absolute;
+    top: -1.5rem;
+    left: 2rem;
+    background-color: #603c7a; /* violáceo HUB */
+    color: white;
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+    z-index: 10;
+    text-transform: uppercase;
+  } 
+
 .incubable-section {
     background-color: #3f63a7;
     color: white;
@@ -85,7 +105,7 @@ html {
 
   .contenedor-incubadora {
     position: relative;
-    background-color: #ede8f6; /* violáceo claro */
+    background-color: #e0d1fa ; /* violáceo claro */
     border-radius: 1rem;
     padding: 3rem 2rem 2rem;
     max-width: 1000px;
@@ -97,7 +117,7 @@ html {
     position: absolute;
     top: -1.2rem;
     left: 2rem;
-    background-color: #6A0DAD;
+    background-color: #603c7a;
     color: white;
     padding: 0.5rem 1.2rem;
     border-radius: 0.5rem;
@@ -132,7 +152,7 @@ html {
     border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
-  
+
 .feature-subtitle {
     padding: 0 1rem;
     max-width: 1000px;
@@ -142,6 +162,69 @@ html {
 .featureeer {
     text-align: center;
   }
+
+  .modelo-incubadora {
+    position: relative;
+    background-color: #e0d1fa; /* violáceo claro */
+    border-radius: 1rem;
+  padding: 3rem 2.5rem 2.5rem;
+  margin: 3rem 1rem; /* margen arriba/abajo y a los costados */
+  max-width: 1000px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+  
+  .titulo-flotante-modelo {
+    position: absolute;
+    top: -1.2rem;
+    left: 2rem;
+    background-color: #603c7a; /* violeta más oscuro */
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contenido-modelo {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  
+ 
+
+  .imagen-modelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .imagen-modelo img {
+    width: 260px;
+    height: auto;
+    object-fit: contain;
+    background-color: #fff;             /* fondo blanco uniforme */
+    border: 1px solid #ddd;             /* borde sutil */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 0.5rem;                    /* separación interna */
+  }
+  
+ 
+
+  .imagen-modelo img {
+    max-width: 100%;
+    width: 260px;
+    height: auto;
+  }
+
+
+
+  
 
 
 .footer-custom {
