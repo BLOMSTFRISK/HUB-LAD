@@ -11,6 +11,10 @@
 }
 
 .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* espacio entre los logos */
+
   height: 50px;
 }
 
@@ -71,10 +75,16 @@
 }
 
 .brand {
-    width: 40px;
-    height: auto;
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
+
+.brand-logo {
+  width: 54px;
+  height: auto;
+}
+
 
 
 .nav-title {
@@ -109,7 +119,7 @@
   }
   
   .nav-button:hover {
-    color: #54002b; /* ejemplo de hover, podés personalizarlo */
+    color: #f7f1f4; /* ejemplo de hover, podés personalizarlo */
   }
 
 .nav-button {
@@ -128,9 +138,7 @@
     cursor: pointer;
     background-color: var(--primary-color);
     color: var(--black-color);
-    border: 1px solid var(--black-color);
-    scale: 1.05;
-    box-shadow: 5px;
+   
 
 }
     
