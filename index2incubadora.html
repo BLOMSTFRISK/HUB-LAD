@@ -44,14 +44,16 @@
             
         </header>
 
-        <main>
-            <section class="hero">
-                <div class="hero-content">
-                    <img src="images/WhatsApp Image 2023-09-28 at 7.02.46 PM.jpeg" class="floating" alt="floater izq">
-                    <h2 class="hero-title text-serif">Incubadora de Diseño</h2>
-                    <a href="#modelos" class="nav-button">Modelos de Incubación</a>
-
-                </div>
+        <main> 
+          <section class="hero relative bg-cover bg-center bg-no-repeat w-full" style="background-image: url('images/WhatsApp Image 2023-09-28 at 7.02.46 PM.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 50vh;">
+            <div class="absolute inset-0 bg-black/20"></div> <!-- filtro suave -->          
+            <div class="absolute inset-0 bg-black/30"></div> <!-- filtro suave encima de la imagen -->
+            <div class="hero-content text-white text-center flex flex-col items-center justify-center h-full backdrop-brightness-75 px-4">
+              <h2 class="hero-title text-serif text-4xl font-bold mb-4">Incubadora de Diseño</h2>
+              <a href="#modelos" class="nav-button bg-[#6A0DAD] hover:bg-[#4e098c] text-white font-semibold py-2 px-6 rounded-lg transition">
+                Modelos de Incubación
+              </a>
+            </div>
             </section>
             <br>
         </br>
@@ -101,10 +103,13 @@
                   MODELOS DE INCUBACIÓN INICIAL
                 </h2>
               </section>
-
+              
+              
             <section class="features" > 
                 <div class="features-wrapper"> 
+                  
                     <div class="feature">
+                     
                         <h6 class="text-serif feature-subtitle">MODELO 1: CONCURSO</h6>
                         <br><br/>
                         <div class="featuree">
