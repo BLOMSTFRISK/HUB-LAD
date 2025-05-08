@@ -82,6 +82,57 @@ html {
   .boton-link:hover {
     background-color: #2e084d; /* aún más oscuro en hover */
   }
+
+  .contenedor-incubadora {
+    position: relative;
+    background-color: #ede8f6; /* violáceo claro */
+    border-radius: 1rem;
+    padding: 3rem 2rem 2rem;
+    max-width: 1000px;
+    margin: 4rem auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-flotante {
+    position: absolute;
+    top: -1.2rem;
+    left: 2rem;
+    background-color: #6A0DAD;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-size: 1rem;
+  }
+  
+  .subtitulo-incubadora {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3e2d4f;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contenido-incubadora p {
+    line-height: 1.6;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .imagenes-incubadora {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .imagenes-incubadora img {
+    width: 250px;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
 .feature-subtitle {
     padding: 0 1rem;
     max-width: 1000px;
