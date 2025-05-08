@@ -10,6 +10,17 @@
   flex-wrap: wrap;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  width: 54px;
+  height: auto;
+}
+
 .brand-logo {
     display: flex;
     align-items: center;
@@ -74,16 +85,7 @@
         
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
-.brand-logo {
-  width: 54px;
-  height: auto;
-}
 
 
 
@@ -135,10 +137,10 @@
 }
 
 .nav-button:hover {
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--black-color);
-   
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+ 
 
 }
     
