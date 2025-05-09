@@ -87,7 +87,39 @@
   <!-- CONTENEDOR -->
   <div class="container max-w-4xl mx-auto bg-white rounded-2xl shadow-lg my-10 p-6 sm:p-10">
     <div class="max-w-2xl mx-auto text-left text-base leading-relaxed space-y-4 mb-10">
-        <img src="images/convocatorias.png" alt="Imagen convocatoria" class="w-full rounded-md shadow-md mb-8">
+
+  <!-- Carrusel mejorado -->
+  <div id="carousel"
+  class="relative w-full h-64 overflow-hidden rounded-xl shadow-md mb-8 group">
+  
+  <div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out h-full" id="carousel-inner">
+  <!-- Slide 1 -->
+  <a href="http://www.agencia.mincyt.gob.ar/frontend/agencia/convocatoria/265" class="flex-shrink-0 w-full h-full">
+   <img src="images/convocatorias.png" alt="Concursos" class="w-full h-full object-cover" />
+  </a>
+  <!-- Slide 2 -->
+  <a href= "https://sancorsegurosimpulsa.com" class="flex-shrink-0 w-full h-full">
+   <img src="images/convocatoria impulsa futuro.webp" alt="Código Abierto" class="w-full h-full object-cover" />
+  </a>
+  <!-- Slide 3 -->
+  <a href="https://www.innovar.mincyt.gob.ar/" class="flex-shrink-0 w-full h-full">
+   <img  src="images/innovar concurso.jpg" alt="Emprendimiento" class="w-full h-full object-cover" />
+  </a>
+  </div>
+  
+  <!-- Botones -->
+  <button onclick="prevSlide()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-80 px-2 py-1 rounded-full shadow">
+  ‹
+  </button>
+  <button onclick="nextSlide()" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-80 px-2 py-1 rounded-full shadow">
+  ›
+  </button>
+  
+  <!-- Indicadores -->
+  <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-2" id="carousel-indicators"></div>
+  </div>
+  
+
       <h2 class="text-2xl font-bold text-morado">¿Cómo participar?</h2>
       <p class="text-lg">Una herramienta para acceder a financiamiento público o privado a través de convocatorias técnicas o institucionales.</p>
 
@@ -123,7 +155,7 @@
 
     <!-- BOTONES -->
     <div class="text-center">
-      <a href="https://forms.gle/YkWWrX42bZ63VJQx7" class="inline-block bg-[#a2263f] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4e098c] transition">
+      <a href="https://forms.gle/z7JMHHZGA1QHoRmq8" class="inline-block bg-[#a2263f] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4e098c] transition">
         Completar el formulario para participar del Modelo de Incubación CONVOCATORIA
       </a>
     </div>
