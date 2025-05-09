@@ -148,22 +148,27 @@ lila: '#C587C5',
       <!-- HERO con logo de fondo -->
 
       <section
-  id="inicio"
+
+      id="inicio"
   class="relative h-[calc(100vh-80px)] bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('images/Recurso\ 4B.png'); background-size: 65%;"
+  style="background-image: url('images/Recurso 4B.png'); background-size: 65%;"
 >
+  <!-- Enlace invisible para permitir clic -->
+  <a href="#hub" class="absolute inset-0 z-20 cursor-pointer" aria-label="Ir al inicio"></a>
+
   <div class="absolute inset-0 bg-black/0.025"></div>
 
-        <!-- Overlay para mejor contraste -->
-        <div class="absolute inset-0 bg-black/0.025"></div>
-        <div class="relative z-10 text-white text-center animate-fade-in">
-          <!-- Contenido opcional -->
-          <!-- <h1 class="text-4xl font-bold">HUB DI UNLa</h1> -->
-        </div>
-      </section>
+  <div class="relative z-10 text-white text-center animate-fade-in">
+    <!-- <h1 class="text-4xl font-bold">HUB DI UNLa</h1> -->
+  </div>
+</section>
+  
     
       <!-- Hero principal con texto -->
-      <section class="text-center py-20 px-4">
+      <section 
+      id="hub"
+      class="text-center py-20 px-4">
+       
         <h1 class="text-5xl font-bold mb-4">HUB DE INCUBACION DE DISEÑO</h1>
         <p class="text-xl max-w-xl mx-auto mb-8">
           Diagnostico de Diseño, estrategias y propósito para que tu idea se convierta en un emprendimiento real.
@@ -214,7 +219,7 @@ lila: '#C587C5',
 
     <!-- Sección de estudios -->
     <section id="estudios" class="py-16 px-6 bg-[#B4A7D6]">
-      <h2 class="text-3xl font-semibold text-center mb-12 text-white">ECOSISTEMA DEL HUB</h2>
+      <h2 class="text-5xl font-semibold text-center mb-12 text-white">ECOSISTEMA DEL HUB</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         
         <!-- DIAGNOSTICO -->
@@ -339,7 +344,7 @@ lila: '#C587C5',
     <!-- Sobre HUB -->
 
     <section id="sobre" class="py-20 px-6 bg-[#f0eee8] text-center">
-      <h2 class="text-3xl font-semibold mb-6">Sobre el HUB</h2>
+      <h2 class="text-5xl font-semibold mb-6">Sobre el HUB</h2>
     
       <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6 text-justify sm:text-center">
         <p>
@@ -375,7 +380,7 @@ lila: '#C587C5',
 
     <!-- Comunidad -->
     <section id="comunidad" class="py-20 px-6 bg-[#a2263f] text-center">
-      <h2 class="text-3xl font-semibold mb-6 text-white">Sumate al HUB</h2>
+      <h2 class="text-5xl font-semibold mb-6 text-white">Sumate al HUB</h2>
       <p class="max-w-xl mx-auto mb-6 text-lg text-white">
         Recibí recursos, novedades sobre nuestro HUB y el ecosistema emprendedor de Diseño.
       </p>
