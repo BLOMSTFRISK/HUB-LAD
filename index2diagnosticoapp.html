@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HUB DI UNLa - Diagnóstico de Diseño</title>
+  <title>Diagnóstico de Diseño</title>
 
   <!-- ✅ Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +17,16 @@
             violeta: '#9676d8',
             morado: '#6A1B9A',
             fondo: '#FAF5FF',
+            bordo: '#a2263f',
+            celeste: '#0c6d99',
+            azul: '#1D3B6D',
+            berenjena: '#5c4554',
+            bordooscuro: '#552c5b',
+            violaceo: '#6a4b8e',
+            celestonoscuro: '#1394ad',
+            vino: '#80142f',
+            violetagrafito: '#3e2d4f',
+
           },
         },
       },
@@ -50,10 +60,12 @@
   <!-- HEADER -->
   <header class="bg-[#1D3B6D] text-white text-center py-10 shadow-md px-4">
     <a href="index.html">
-      <img src="./images/logo-hubdi-rectangular.png" alt="Logo HUB DI UNLa" class="max-w-xs mx-auto rounded-xl mb-3" />
+      <div class="bg-white p-6 rounded-xl shadow-md max-w-xs mx-auto my-8">
+        <img src="./images/Recurso 4B.png" alt="Logo HUB DI UNLa" class="w-full h-auto rounded-lg" />
+      </div>
     </a>
-    <h1 class="text-3xl font-bold">HUB DI UNLa</h1>
-    <p class="text-xl mt-2">Diseño, Diagnóstico e Incubación</p>
+    <h1 class="text-3xl font-bold">Diseño, Diagnóstico e Incubación</h1>
+   
   </header>
 
   <!-- CONTENIDO -->
@@ -121,21 +133,22 @@
     <div id="result" class="result hidden bg-violet-100 p-6 rounded-xl mt-8 animate-fadeIn"></div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-violeta text-white py-6 text-center font-bold px-4">
-    <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
-      <img src="./images/logo-unla.png" alt="Logo UNLa" class="w-16 sm:w-20 lg:w-24 h-auto" />
-      <img src="./images/logo-bloms.png" alt="Blöms Consultora" class="w-16 sm:w-20 lg:w-24 h-auto" />
-    </div>
+<!-- FOOTER -->
+<footer class="bg-violetagrafito text-white py-6 text-center font-bold px-4 mt-12 rounded-t-2xl shadow-inner">
+  <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
+    <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="Logo UNLa" class="w-12 sm:w-16 h-auto" />
+    <img src="./images/lad.png" alt="Logo LAD" class="w-12 sm:w-16 h-auto" />
+   
+  </div>
+  <p class="mb-2">© 2025 HUB DI UNLa</p>
+  <p class="text-sm">
+    2023 <a href="#" class="underline hover:text-white">HUB de Incubacion</a>, Diseño WEB
+ 
+  </p>
+</footer>
 
-    <p class="mb-2">© 2025 HUB DI UNLa | Consultora Blöms</p>
 
-    <p class="text-sm">
-      2023 <a href="#" class="underline hover:text-white">HUB DE INCUBACION</a>, Diseño WEB
-      <a href="BLÖMS.html" target="_blank" class="underline hover:text-white">BLÖMS</a>, Design concept
-      <a href="https://bloms.ar" target="_blank" class="underline hover:text-white">BLÖMS Consultora</a>
-    </p>
-  </footer>
+  
 
   <!-- JS -->
   <script>
