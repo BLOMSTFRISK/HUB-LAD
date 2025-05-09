@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Llave en Mano</title>
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 🎨 Config personalizada -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            violeta: '#9676d8',
+            morado: '#6A1B9A',
+            celeste: '#0c6d99',
+            bordo: '#a2263f',
+            fondo: '#FAF5FF',
+            azul: '#1D3B6D',
+            berenjena: '#5c4554',
+            bordooscuro: '#552c5b',
+            violaceo: '#6a4b8e',
+            celestonoscuro: '#1394ad',
+            vino: '#80142f',
+            violetagrafito: '#3e2d4f',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- 💅 Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #F3E5F5, #E1BEE7);
+    }
+  </style>
+</head>
+
+<body class="bg-fondo text-gray-800 text-center m-0 p-0">
+  <!-- HEADER -->
+  <header class="bg-[#a2263f] text-white py-8 px-4">
+    <a href="index.html">
+      <div class="bg-white p-6 rounded-xl shadow-md max-w-xs mx-auto my-8">
+        <img src="./images/Recurso 4B.png" alt="Logo HUB DI UNLa" class="w-full h-auto rounded-lg" />
+      </div>
+    </a>
+    <h1 class="text-3xl font-bold">Modelo de Incubación: LLAVE EN MANO</h1>
+  </header>
+
+  <!-- CONTENEDOR -->
+  <div class="container max-w-4xl mx-auto bg-white rounded-2xl shadow-lg my-10 p-6 sm:p-10">
+    <div class="max-w-2xl mx-auto text-left text-base leading-relaxed space-y-4 mb-10">
+      <h2 class="text-2xl font-bold text-bordo">¿Cómo participar?</h2>
+      <p class="text-lg">Convertí tu proyecto en una propuesta integral, técnica y ejecutable: lista para implementarse o transferirse.</p>
+
+      <h2 class="text-2xl font-semibold text-bordo mb-4">¿En qué consiste este modelo?</h2>
+      <p>
+        La incubadora de proyectos llave en mano está diseñada para acompañar a quienes buscan estructurar su TIF, PPP o idea-proyecto como una carpeta técnica completa, profesional y funcional.
+      </p>
+
+      <p>
+        Este modelo permite desarrollar una propuesta que contenga todos los elementos necesarios para que pueda ser ejecutada por un tercero (empresa, institución, cooperativa, etc.), incluyendo aspectos proyectuales, técnicos, económicos y operativos.
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-3 text-bordo">¿Qué incluye el acompañamiento?</h3>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Detección de oportunidades o necesidades concretas.</li>
+        <li>Definición del producto o servicio como solución llave en mano.</li>
+        <li>Armado de carpeta técnica con planos, documentación, costos y especificaciones.</li>
+        <li>Asesoramiento en procesos, materiales, normativas y viabilidad técnica.</li>
+        <li>Proyección de implementación real o transferencia institucional.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-3 text-bordo">¿A quién está dirigido?</h3>
+      <p>
+        Este modelo es ideal para estudiantes, egresados/as o equipos con un proyecto en desarrollo o con una necesidad detectada que busquen generar una solución integral, factible y profesional, orientada a una implementación concreta.
+      </p>
+
+      <img src="images/llave en mano.jfif" alt="Imagen llave en mano" class="w-full rounded-md shadow-md mb-8">
+    </div>
+
+    <!-- BOTONES -->
+    <div class="text-center">
+      <a href="https://forms.gle/YkWWrX42bZ63VJQx7" class="inline-block bg-[#a2263f] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4e098c] transition">
+        Completar el formulario para participar del Modelo de Incubación LLAVE EN MANO
+      </a>
+    </div>
+    <br><br>
+    <div class="text-center">
+      <a href="mailto:incubadoradetifypppunla@gmail.com?subject=Consulta%20Modelo%203%20-%20Llave%20en%20Mano" class="inline-block bg-[#6A0DAD] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4e098c] transition">
+        Quiero saber más
+      </a>
+    </div>
+
+    <!-- CATÁLOGOS -->
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold text-morado mb-6">Ejemplos y referencias</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="./images/caratula manual de incubables.png" download>
+          <img src="./images/caratula manual de incubables.png" alt="Manual de Incubables" class="w-40 rounded-xl shadow-lg" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-violetagrafito text-white py-6 text-center font-bold px-4 mt-12 rounded-t-2xl shadow-inner">
+    <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
+      <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="Logo UNLa" class="w-12 sm:w-16 h-auto" />
+      <img src="./images/lad.png" alt="Logo LAD" class="w-12 sm:w-16 h-auto" />
+    </div>
+    <p class="mb-2">© 2025 HUB DI UNLa</p>
+    <p class="text-sm">
+      2023 <a href="#" class="underline hover:text-white">HUB de Incubación</a>, Diseño WEB
+    </p>
+  </footer>
+</body>
+</html>

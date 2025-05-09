@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convocatoria</title>
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 🎨 Config personalizada -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            violeta: '#9676d8',
+            morado: '#6A1B9A',
+            celeste: '#0c6d99',
+            bordo: '#a2263f',
+            fondo: '#FAF5FF',
+            azul: '#1D3B6D',
+            berenjena: '#5c4554',
+            bordooscuro: '#552c5b',
+            violaceo: '#6a4b8e',
+            celestonoscuro: '#1394ad',
+            vino: '#80142f',
+            violetagrafito: '#3e2d4f',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- 💅 Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #F3E5F5, #E1BEE7);
+    }
+  </style>
+</head>
+
+<body class="bg-fondo text-gray-800 text-center m-0 p-0">
+  <!-- HEADER -->
+  <header class="bg-[#a2263f] text-white py-8 px-4">
+    <a href="index.html">
+      <div class="bg-white p-6 rounded-xl shadow-md max-w-xs mx-auto my-8">
+        <img src="./images/Recurso 4B.png" alt="Logo HUB DI UNLa" class="w-full h-auto rounded-lg" />
+      </div>
+    </a>
+    <h1 class="text-3xl font-bold">Modelo de Incubación: CONVOCATORIA</h1>
+  </header>
+
+  <!-- CONTENEDOR -->
+  <div class="container max-w-4xl mx-auto bg-white rounded-2xl shadow-lg my-10 p-6 sm:p-10">
+    <div class="max-w-2xl mx-auto text-left text-base leading-relaxed space-y-4 mb-10">
+      <h2 class="text-2xl font-bold text-bordo">¿Cómo participar?</h2>
+      <p class="text-lg">Una herramienta para acceder a financiamiento público o privado a través de convocatorias técnicas o institucionales.</p>
+
+      <h2 class="text-2xl font-semibold text-bordo mb-4">¿En qué consiste este modelo?</h2>
+      <p>
+        La incubadora de convocatorias brinda asesoramiento y acompañamiento para la formulación, mejora y presentación de proyectos ante organismos que ofrecen financiamiento, asistencia técnica o vinculación institucional.
+      </p>
+
+      <p>
+        Está orientado a personas, equipos o instituciones que cuenten con una idea en etapa temprana, una propuesta en desarrollo o un proyecto consolidado que pueda ser presentado ante una convocatoria abierta (local, nacional o internacional).
+      </p>
+
+      <p>
+        A través de este modelo se promueve la detección de oportunidades, la formulación estratégica y técnica, y la mejora sustancial de la propuesta para incrementar las posibilidades de ser seleccionada y financiada.
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-3 text-bordo">¿Qué incluye el acompañamiento?</h3>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Búsqueda y análisis de convocatorias adecuadas.</li>
+        <li>Evaluación del proyecto y ajuste a requisitos técnicos.</li>
+        <li>Asesoramiento para completar formularios y carpetas.</li>
+        <li>Redacción de objetivos, presupuesto y planificación.</li>
+        <li>Seguimiento y apoyo durante el proceso de postulación.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-3 text-bordo">¿A quién está dirigido?</h3>
+      <p>
+        Este modelo está pensado para estudiantes, egresados/as, docentes, emprendedores o instituciones que deseen acceder a recursos externos para materializar o escalar sus propuestas de diseño, innovación, desarrollo tecnológico o impacto social.
+      </p>
+
+      <img src="images/convocatorias.png" alt="Imagen convocatoria" class="w-full rounded-md shadow-md mb-8">
+    </div>
+
+    <!-- BOTONES -->
+    <div class="text-center">
+      <a href="https://forms.gle/YkWWrX42bZ63VJQx7" class="inline-block bg-[#a2263f] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4e098c] transition">
+        Completar el formulario para participar del Modelo de Incubación CONVOCATORIA
+      </a>
+    </div>
+    <br><br>
+    <div class="text-center">
+      <a href="mailto:incubadoradetifypppunla@gmail.com?subject=Consulta%20Modelo%202%20-%20Convocatoria" class="inline-block bg-[#6A0DAD] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4e098c] transition">
+        Quiero saber más
+      </a>
+    </div>
+
+    <!-- CATÁLOGOS -->
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold text-morado mb-6">Ejemplos de convocatorias y proyectos incubados</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="./images/Caratula Catalogo de TIFs y PPPs.png" download>
+          <img src="./images/Caratula Catalogo de TIFs y PPPs.png" alt="Catálogo TIFs y PPPs" class="w-40 rounded-xl shadow-lg" />
+        </a>
+        <a href="./images/caratula manual de incubables.png" download>
+          <img src="./images/caratula manual de incubables.png" alt="Manual de Incubables" class="w-40 rounded-xl shadow-lg" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-violetagrafito text-white py-6 text-center font-bold px-4 mt-12 rounded-t-2xl shadow-inner">
+    <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
+      <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="Logo UNLa" class="w-12 sm:w-16 h-auto" />
+      <img src="./images/lad.png" alt="Logo LAD" class="w-12 sm:w-16 h-auto" />
+    </div>
+    <p class="mb-2">© 2025 HUB DI UNLa</p>
+    <p class="text-sm">
+      2023 <a href="#" class="underline hover:text-white">HUB de Incubación</a>, Diseño WEB
+    </p>
+  </footer>
+</body>
+</html>
