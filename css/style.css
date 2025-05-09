@@ -21,7 +21,7 @@ html {
     position: absolute;
     top: -1.5rem;
     left: 2rem;
-    background-color: #603c7a; /* violáceo HUB */
+    background-color: #a2263f; /* violáceo HUB */
     color: white;
     padding: 0.7rem 1.6rem;
     border-radius: 0.5rem;
@@ -34,12 +34,33 @@ html {
   } 
 
 .incubable-section {
-    background-color: #3f63a7;
+    background-color: #5a2e74;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
   }
   
+  /* Aplica Roboto a la sección de "nosotros te ayudamos" */
+.incubable-section,
+.nosotros-title,
+.nosotros-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Título */
+.nosotros-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Texto */
+.nosotros-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: white;
+}
   .nosotros-box {
     background-color: #a2263f;
     color: white; /* opcional, para asegurar contraste */
@@ -49,19 +70,7 @@ html {
     margin: 2rem auto 0 auto;
   }
   
-  .nosotros-title {
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: white;
-  }
-  
-  .nosotros-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: white;
-  }
+ 
 
 .ayuda-box {
     background-color: #54002b;
@@ -103,6 +112,10 @@ html {
     background-color: #2e084d; /* aún más oscuro en hover */
   }
 
+  .incubable-section {
+    font-family: 'Roboto', sans-serif;
+  }
+
   .contenedor-incubadora {
     position: relative;
     background-color: #e0d1fa ; /* violáceo claro */
@@ -123,11 +136,11 @@ html {
     border-radius: 0.5rem;
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .subtitulo-incubadora {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #3e2d4f;
     margin-bottom: 1.5rem;
@@ -136,7 +149,7 @@ html {
   .contenido-incubadora p {
     line-height: 1.6;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .imagenes-incubadora {
@@ -188,13 +201,14 @@ html {
   }
   
   .contenido-modelo {
+    font-family: 'Roboto', 'Segoe UI', sans-serif; /* o tu fuente principal */
     font-size: 1.1rem;
     color: #333;
     line-height: 1.7;
-    margin-bottom: 2rem;
+    text-align: justify; /* justifica el texto */
+    margin-top: 1.5rem;
   }
-  
- 
+
 
   .imagen-modelo {
     display: flex;
@@ -205,24 +219,35 @@ html {
   
   .imagen-modelo img {
     width: 260px;
-    height: auto;
-    object-fit: contain;
-    background-color: #fff;             /* fondo blanco uniforme */
-    border: 1px solid #ddd;             /* borde sutil */
+    height: 160px;              /* igual altura para todas */
+    object-fit: fill;          /* puede recortar contenido para igualar forma */
     border-radius: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    padding: 0.5rem;                    /* separación interna */
+    background-color: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
-  
  
 
-  .imagen-modelo img {
-    max-width: 100%;
-    width: 260px;
-    height: auto;
+  .boton-modelo-container {
+    text-align: center;
+    margin-top: 2rem;
   }
-
-
+  
+  .boton-modelo {
+    display: inline-block;
+    background-color: #683a88;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-modelo:hover {
+    background-color: #5520a5;
+  }
 
   
 
