@@ -52,25 +52,23 @@
 <body class="bg-fondo text-gray-800 text-center m-0 p-0">
 
   <!-- HEADER -->
-<!-- HEADER con logo a la izquierda, sin fondo blanco -->
-<header class="bg-violaceo text-white py-4 px-6 flex items-center justify-between">
-  <!-- Logo del HUB a la izquierda -->
-   <a href="https://www.unla.edu.ar/">
-   
-  <img src="./images/Logo UNLA Blanco.png" alt="Logo LAD en blanco y negro" class="h-20 w-auto" />
-</a>
 
-  <a href="index.html">
+  <header class="bg-violaceo text-white py-4 px-6 flex items-center justify-end gap-4">
+    <!-- Contenedor con los 3 logos alineados a la derecha -->
+    
+    <a href="index.html">
+      <img src="./images/Recurso 5BW.png" alt="Logo HUB DI UNLa" class="h-14 w-auto transition duration-300 hover:opacity-80 cursor-pointer" />
+    </a>
 
-    <img src="./images/Recurso 5BW.png" alt="Logo HUB DI UNLa" class="h-20 w-auto" />
-  </a>
+    <a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad">
+      <img src="./images/LAD-logo Blanco.png" alt="Logo LAD" class="h-20 w-auto transition duration-300 hover:opacity-80 cursor-pointer" />
+    </a>
 
-  <!-- Logo del LAD a la derecha -->
-   <a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad">
+    <a href="https://www.unla.edu.ar/">
+      <img src="./images/Logo UNLA Blanco.png" alt="Logo UNLa" class="h-14 w-auto transition duration-300 hover:opacity-80 cursor-pointer" />
+    </a>
+  </header> 
 
-  <img src="./images/LAD-logo Blanco.png" alt="Logo LAD en blanco y negro" class="h-20 w-auto" />
-</a>
-</header>
 
 <br>
 
@@ -94,7 +92,36 @@
     <!-- INFO -->
     <div class="max-w-2xl mx-auto text-left text-base leading-relaxed space-y-4 mb-10">
 
-      <img src="images/concursos.png" alt="Imagen concurso" class="w-full rounded-md shadow-md mb-8">
+      <!-- Carrusel mejorado -->
+<div id="carousel"
+class="relative w-full h-64 overflow-hidden rounded-xl shadow-md mb-8 group">
+
+<div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out h-full" id="carousel-inner">
+<!-- Slide 1 -->
+<a href="https://www.argentina.gob.ar/noticias/concurso-de-diseno-para-el-arte-y-la-cultura-2023" class="flex-shrink-0 w-full h-full">
+ <img src="images/Concurso-de-Diseno.webp" alt="Concursos" class="w-full h-full object-cover" />
+</a>
+<!-- Slide 2 -->
+<a href= "https://www.argentina.gob.ar/servicio/obtener-el-sello-de-buen-diseno-argentino" class="flex-shrink-0 w-full h-full">
+ <img src="images/sello buen diseño.webp" alt="Código Abierto" class="w-full h-full object-cover" />
+</a>
+<!-- Slide 3 -->
+<a href="https://www.innovar.mincyt.gob.ar/" class="flex-shrink-0 w-full h-full">
+ <img  src="images/innovar concurso.jpg" alt="Emprendimiento" class="w-full h-full object-cover" />
+</a>
+</div>
+
+<!-- Botones -->
+<button onclick="prevSlide()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-80 px-2 py-1 rounded-full shadow">
+‹
+</button>
+<button onclick="nextSlide()" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-80 px-2 py-1 rounded-full shadow">
+›
+</button>
+
+<!-- Indicadores -->
+<div class="absolute bottom-2 left-0 right-0 flex justify-center gap-2" id="carousel-indicators"></div>
+</div>
 
       <h2 class="text-2xl font-bold text-morado">¿Cómo participar?</h2>
       <p>
@@ -185,7 +212,69 @@
  
   </p>
 </footer>
-  
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('#carousel-inner a');
+  const totalSlides = slides.length;
+  const indicatorsContainer = document.getElementById('carousel-indicators');
+  let intervalID;
+
+  function updateSlide() {
+    const inner = document.getElementById('carousel-inner');
+    inner.style.transform = `translateX(-${currentSlide * 100}%)`;
+    updateIndicators();
+  }
+
+  function updateIndicators() {
+    indicatorsContainer.querySelectorAll('span').forEach((dot, index) => {
+      dot.classList.toggle('bg-white', index === currentSlide);
+      dot.classList.toggle('bg-white/50', index !== currentSlide);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  }
+
+  // Crear puntos de navegación
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'w-3 h-3 rounded-full bg-white/50 cursor-pointer transition';
+    dot.addEventListener('click', () => {
+      currentSlide = i;
+      updateSlide();
+    });
+    indicatorsContainer.appendChild(dot);
+  }
+
+  updateSlide();
+
+  // Auto-play y pausa al pasar el mouse
+  const carousel = document.getElementById('carousel');
+  function startAutoPlay() {
+    intervalID = setInterval(() => {
+      nextSlide();
+    }, 5000);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(intervalID);
+  }
+
+  carousel.addEventListener('mouseenter', stopAutoPlay);
+  carousel.addEventListener('mouseleave', startAutoPlay);
+
+  startAutoPlay();
+</script>
+
+
 
 </body>
 </html>
