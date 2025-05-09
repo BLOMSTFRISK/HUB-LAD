@@ -67,16 +67,53 @@
   <script>
     document.getElementById('loginForm').addEventListener('submit', function (e) {
       e.preventDefault();
-      const user = document.getElementById('usuario').value;
+      const user = document.getElementById('usuario').value.trim().toLowerCase();
       const pass = document.getElementById('password').value;
-
-      if (user === 'admin' && pass === '1234') {
-        window.location.href = 'index.html';
+  
+      // Lista de usuarios válidos con sus contraseñas
+      const usuarios = {
+        admin: '1234',
+        claradi: '654321',
+        ceciliadi: '654321',
+        diegodi: '654321',
+        willydi: '654321',
+        pablodi: '654321'
+      };
+  
+      if (usuarios[user] && usuarios[user] === pass) {
+        window.location.href = 'index.html'; // Redirige al HUB
       } else {
         alert('Usuario o contraseña incorrectos');
       }
     });
   </script>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const user = document.getElementById('usuario').value.trim().toLowerCase();
+      const pass = document.getElementById('password').value;
+  
+      // Lista de usuarios válidos con sus contraseñas
+      const usuarios = {
+        Estefi: '123456',
+        claradi: '654321',
+        ceciliadi: '654321',
+        diegodi: '654321',
+        willydi: '654321',
+        pablodi: '654321'
+      };
+  
+      if (usuarios[user] && usuarios[user] === pass) {
+        window.location.href = 'index.html'; // Redirige al HUB
+      } else {
+        alert('Usuario o contraseña incorrectos');
+      }
+    });
+  </script>
+
+ 
+ 
 
 </body>
 </html>
