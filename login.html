@@ -81,7 +81,9 @@
       };
   
       if (usuarios[user] && usuarios[user] === pass) {
-        window.location.href = 'index.html'; // Redirige al HUB
+        sessionStorage.setItem('usuarioLogueado', user); // guarda el acceso
+window.location.href = 'index.html';
+        
       } else {
         alert('Usuario o contraseña incorrectos');
       }
