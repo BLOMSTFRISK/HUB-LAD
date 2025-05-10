@@ -73,6 +73,12 @@
           },
         };
       </script>
+
+<script>
+  if (!sessionStorage.getItem('usuarioLogueado')) {
+    window.location.href = 'login.html';
+  }
+</script>
     
       <style>
         html {
