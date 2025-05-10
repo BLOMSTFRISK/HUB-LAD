@@ -109,31 +109,31 @@
 <!-- NAV RESPONSIVE -->
 
 <nav class="fixed top-0 left-0 right-0 bg-[#3e2d4f] text-white shadow-md z-50 px-6 py-3 flex items-center justify-between">
- 
+  <!-- Logo + texto -->
   <a href="#inicio" class="flex items-center gap-2 text-lg sm:text-xl font text-white hover:underline">
-    <!-- Logos -->
     <img src="./images/LAD-logo chico.png" alt="Logo LAD" class="h-14 w-auto" />
     <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="Logo UNLa" class="h-14 w-auto" />
-    <!-- Texto -->
     HUB INCUBACION DE DISEÑO
   </a>
- 
+
+  <!-- Botón hamburguesa visible solo en mobile -->
   <div class="sm:hidden">
     <button id="menu-toggle" class="text-white text-3xl">&#9776;</button>
   </div>
 
-  <ul id="menu" class="hidden sm:flex items-center gap-4 text-base font text-white">
-    <li><a href="#sobre" class="hover:text-lila">Sobre el HUB</a></li>
-    <li><a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad" target="_blank" rel="noopener noreferrer" class="hover:text-lila">LAD</a></li>
-    <li><a href="#estudios" class="hover:text-lila">Ecosistema</a></li>
+  <!-- Menú -->
+  <ul id="menu" class="hidden sm:flex flex-col sm:flex-row items-start sm:items-center gap-4 text-base font text-white absolute sm:static top-full left-0 w-full sm:w-auto bg-[#3e2d4f] p-4 sm:p-0 shadow-md sm:shadow-none z-40">
+    <li><a href="#sobre" class="hover:text-lila block sm:inline">Sobre el HUB</a></li>
+    <li><a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad" target="_blank" rel="noopener noreferrer" class="hover:text-lila block sm:inline">LAD</a></li>
+    <li><a href="#estudios" class="hover:text-lila block sm:inline">Ecosistema</a></li>
     <li>
       <a href="mailto:incubadoradetifypppunla@gmail.com?subject=Consulta%20sobre%20la%20incubadora"
-         class="hover:text-lila flex items-center space-x-2">
+         class="hover:text-lila flex items-center space-x-2 block sm:inline">
         <i class="fas fa-envelope"></i>
         <span>Consultas</span>
       </a>
     </li>
-    <!-- Selector de idioma al final del nav -->
+    <!-- Selector de idioma -->
     <li class="flex flex-col gap-2">
       <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
         <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
@@ -435,6 +435,17 @@
       });
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  });
+</script>
 
   </body>
 </html>
