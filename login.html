@@ -93,19 +93,17 @@
       };
   
       if (usuarios[user] && usuarios[user] === pass) {
-        sessionStorage.setItem('usuarioLogueado', user);
-  
-        // Si venía de una URL con hash (ej. index.html#ecosistemas), lo conserva
-        const hash = window.location.hash;
-        window.location.href = 'index.html' + hash;
-  
-      } else {
-        alert('Usuario o contraseña incorrectos');
-      }
-    });
-  </script>
+      sessionStorage.setItem('usuarioLogueado', user); // guarda el login
+      const destino = sessionStorage.getItem('urlDestino') || 'index.html';
+      sessionStorage.removeItem('urlDestino'); // limpia después de usarlo
+      window.location.href = destino;
+    } else {
+      alert('Usuario o contraseña incorrectos');
+    }
+  });
+</script>
+     
 
-  
 
 </body>
 </html>
