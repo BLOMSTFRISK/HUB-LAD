@@ -47,8 +47,8 @@
 
 <nav class="fixed top-0 left-0 right-0 bg-[#3e2d4f] text-white shadow-md z-50 px-6 py-3 flex items-center justify-between">
   <a href="#inicio" class="flex items-center gap-2 text-lg sm:text-xl font text-white hover:underline">
-    <img src="./images/LAD-logo chico.png" alt="LAD Logo" class="h-8 w-auto" />
-    <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="UNLa Logo" class="h-9 w-auto" />
+    <img src="./images/LAD-logo chico.png" alt="LAD Logo" class="h-14 w-auto" />
+    <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="UNLa Logo" class="h-14 w-auto" />
     DESIGN INCUBATION HUB
   </a>
   <div class="sm:hidden">
@@ -287,6 +287,27 @@
     2023 <a href="#" class="underline hover:text-white">HUB of Incubation</a>, Web Design
   </p>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+  
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('flex-col');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('top-full');
+        menu.classList.toggle('left-0');
+        menu.classList.toggle('bg-[#3e2d4f]'); // mismo color que el nav
+        menu.classList.toggle('w-full');
+        menu.classList.toggle('p-4');
+        menu.classList.toggle('shadow-md');
+        menu.classList.toggle('z-40');
+      });
+    });
+  </script>
 
 </body>
 </html>
