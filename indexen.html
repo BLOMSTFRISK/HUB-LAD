@@ -52,7 +52,9 @@
     DESIGN INCUBATION HUB
   </a>
   <div class="sm:hidden">
-    <button id="menu-toggle" class="text-white text-3xl">&#9776;</button>
+    <button id="menu-toggle" class="text-white text-3xl">
+        <span id="menu-icon">&#9776;</span>
+      </button>
   </div>
   <ul id="menu" class="hidden sm:flex items-center gap-4 text-base font text-white">
     <li><a href="#sobre" class="hover:text-lila">About the HUB</a></li>
@@ -292,6 +294,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       const toggle = document.getElementById('menu-toggle');
       const menu = document.getElementById('menu');
+      const icon = document.getElementById('menu-icon');
   
       toggle.addEventListener('click', () => {
         menu.classList.toggle('hidden');
@@ -300,11 +303,18 @@
         menu.classList.toggle('absolute');
         menu.classList.toggle('top-full');
         menu.classList.toggle('left-0');
-        menu.classList.toggle('bg-[#3e2d4f]'); // mismo color que el nav
+        menu.classList.toggle('bg-[#3e2d4f]');
         menu.classList.toggle('w-full');
         menu.classList.toggle('p-4');
         menu.classList.toggle('shadow-md');
         menu.classList.toggle('z-40');
+  
+        // Cambiar icono
+        if (menu.classList.contains('hidden')) {
+          icon.innerHTML = '&#9776;'; // ☰
+        } else {
+          icon.innerHTML = '&#10005;'; // ✖
+        }
       });
     });
   </script>
