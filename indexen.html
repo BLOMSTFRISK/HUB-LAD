@@ -68,14 +68,8 @@
     };
   </script>
 
+ <!-- Seguridad: redirección si no hay sesión -->
   <script src="auth.js"></script> 
-
-  <!-- Seguridad: redirección si no hay sesión -->
-  <script>
-    if (!sessionStorage.getItem('usuarioLogueado')) {
-      window.location.href = 'login.html';
-    }
-  </script>
 
   <!-- Animaciones -->
   <style>
