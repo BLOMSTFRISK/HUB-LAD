@@ -50,7 +50,9 @@
             celestonoscuro: '#1394ad',
             vino: '#80142f',
             violetagrafito: '#3e2d4f',
-lila: '#C587C5',
+            lila: '#C587C5',
+            violaceoclaro: '#e0d1fa',
+
               },
               fontSize: {
                 '2xl': '1.5rem',
@@ -108,7 +110,7 @@ lila: '#C587C5',
 
 <nav class="fixed top-0 left-0 right-0 bg-[#3e2d4f] text-white shadow-md z-50 px-6 py-3 flex items-center justify-between">
  
-  <a href="#inicio" class="flex items-center gap-2 text-lg sm:text-xl font-bold text-white hover:underline">
+  <a href="#inicio" class="flex items-center gap-2 text-lg sm:text-xl font text-white hover:underline">
     <!-- Logos -->
     <img src="./images/LAD-logo chico.png" alt="Logo LAD" class="h-8 w-auto" />
     <img src="./images/UNLA RECTANGULAR GRANATE.jpg" alt="Logo UNLa" class="h-9 w-auto" />
@@ -116,8 +118,6 @@ lila: '#C587C5',
     HUB INCUBACION DE DISEÑO
   </a>
  
-  
-
   <div class="sm:hidden">
     <button id="menu-toggle" class="text-white text-3xl">&#9776;</button>
   </div>
@@ -133,8 +133,21 @@ lila: '#C587C5',
         <span>Consultas</span>
       </a>
     </li>
+    <!-- Selector de idioma al final del nav -->
+    <li class="flex flex-col gap-2">
+      <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+        <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
+        <span>Español</span>
+      </a>
+      <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+        <img src="./images/us.png" alt="English" class="w-4 h-4 rounded-sm" />
+        <span>English</span>
+      </a>
+    </li>
   </ul>
 </nav>
+
+
 
 
    <!-- Script para el toggle -->
@@ -228,6 +241,41 @@ lila: '#C587C5',
       animation: fadeIn 1.2s ease-out 0.3s forwards;
     }
   </style>
+
+  <!-- Sobre HUB -->
+
+  <section id="sobre" class="py-20 px-6 bg-violaceoclaro text-center">
+    <h2 class="text-5xl font-semibold mb-6">Sobre el HUB</h2>
+  
+    <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6 text-justify sm:text-center">
+      <p>
+        HUB de Incubación de Diseño es un ecosistema que articula unidades académicas y productivas vinculadas a la Licenciatura en Diseño Industrial y al Laboratorio de Diseño (LAD).
+      </p>
+      <p>
+        Funcionamos como una comunidad colaborativa orientada a transformar ideas en emprendimientos creativos y estratégicos. Acompañamos a estudiantes que se encuentran desarrollando sus Trabajos Finales Integradores (TIF) y Prácticas Preprofesionales (PPP), así como a emprendedores, cooperativas y pequeñas y medianas empresas.
+      </p>
+      <p>
+        Nuestro objetivo es brindar un espacio de incubación y asistencia técnica para el desarrollo de proyectos de diseño, promoviendo la innovación y el crecimiento sostenible.
+      </p>
+      <p>
+        Contamos con un equipo multidisciplinario de profesionales que ofrecen asesoramiento en diseño, gestión empresarial y marketing, así como acceso a recursos y herramientas para potenciar el éxito de los proyectos incubados.
+      </p>
+      <p>
+        El HUB de Incubación de Diseño busca fomentar la creatividad, la colaboración y el aprendizaje continuo, generando un impacto positivo en el ecosistema emprendedor y contribuyendo al desarrollo económico y social de la región.
+      </p>
+      <p>
+        Brindamos herramientas de diagnóstico, diseño, capacitación, coaching en gestión y finanzas, y desarrollos orientados a la innovación. Creemos en la colaboración, el propósito y el desarrollo integral como motores del cambio.
+      </p>
+    </div>
+  
+    <div class="text-center mt-8">
+      <a href="https://forms.gle/nwAM4uo8n2Hq824S9"
+         target="_blank" rel="noopener noreferrer"
+         class="inline-block bg-violaceo text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-[#5520a5] transition">
+        Completar formulario de consulta
+      </a>
+    </div>
+  </section>
 
     <!-- Sección de estudios -->
     <section id="estudios" class="py-16 px-6 bg-[#B4A7D6]">
@@ -353,40 +401,7 @@ lila: '#C587C5',
       </div>
     </section>
 
-    <!-- Sobre HUB -->
-
-    <section id="sobre" class="py-20 px-6 bg-[#f0eee8] text-center">
-      <h2 class="text-5xl font-semibold mb-6">Sobre el HUB</h2>
     
-      <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6 text-justify sm:text-center">
-        <p>
-          HUB de Incubación de Diseño es un ecosistema que articula unidades académicas y productivas vinculadas a la Licenciatura en Diseño Industrial y al Laboratorio de Diseño (LAD).
-        </p>
-        <p>
-          Funcionamos como una comunidad colaborativa orientada a transformar ideas en emprendimientos creativos y estratégicos. Acompañamos a estudiantes que se encuentran desarrollando sus Trabajos Finales Integradores (TIF) y Prácticas Preprofesionales (PPP), así como a emprendedores, cooperativas y pequeñas y medianas empresas.
-        </p>
-        <p>
-          Nuestro objetivo es brindar un espacio de incubación y asistencia técnica para el desarrollo de proyectos de diseño, promoviendo la innovación y el crecimiento sostenible.
-        </p>
-        <p>
-          Contamos con un equipo multidisciplinario de profesionales que ofrecen asesoramiento en diseño, gestión empresarial y marketing, así como acceso a recursos y herramientas para potenciar el éxito de los proyectos incubados.
-        </p>
-        <p>
-          El HUB de Incubación de Diseño busca fomentar la creatividad, la colaboración y el aprendizaje continuo, generando un impacto positivo en el ecosistema emprendedor y contribuyendo al desarrollo económico y social de la región.
-        </p>
-        <p>
-          Brindamos herramientas de diagnóstico, diseño, capacitación, coaching en gestión y finanzas, y desarrollos orientados a la innovación. Creemos en la colaboración, el propósito y el desarrollo integral como motores del cambio.
-        </p>
-      </div>
-    
-      <div class="text-center mt-8">
-        <a href="https://forms.gle/nwAM4uo8n2Hq824S9"
-           target="_blank" rel="noopener noreferrer"
-           class="inline-block bg-violaceo text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-[#5520a5] transition">
-          Completar formulario de consulta
-        </a>
-      </div>
-    </section>
 
     
 
