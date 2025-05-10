@@ -1,5 +1,6 @@
  <!DOCTYPE html>
     <html lang="es">
+
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,47 +13,40 @@
       <meta property="og:url" content="https://hubdiunla.github.io/WEB-HUB-DI-UNLa/" />
       <meta name="twitter:card" content="summary_large_image" />
     
-      <!-- Estilos -->
+      <!-- Icono -->
+      <link rel="icon" href="favicon_hub_only_rounded.ico" type="image/x-icon" />
+      <link rel="icon" href="images/favicon_hub_only_rounded.ico" type="image/x-icon" />
+    
+      <!-- Estilos personalizados -->
       <link rel="stylesheet" href="style.css" />
-
-      <script>
-        if (!sessionStorage.getItem('usuarioLogueado')) {
-          window.location.href = 'login.html';
-        }
-      </script>
-
-<link rel="icon" href="favicon_hub_only_rounded.ico" type="image/x-icon" />
-
-<link rel="icon" href="images/favicon_hub_only_rounded.ico" type="image/x-icon" />
-
-
-    </head>
-        
+    
       <!-- Fuente Outfit -->
       <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
     
-      <!-- Tailwind CSS CDN -->
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+      <!-- Tailwind CSS -->
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
-            violeta: '#9676d8',
-            morado: '#6A1B9A',
-            fondo: '#FAF5FF',
-            bordo: '#a2263f',
-            celeste: '#0c6d99',
-            azul: '#1D3B6D',
-            berenjena: '#5c4554',
-            bordooscuro: '#552c5b',
-            violaceo: '#6a4b8e',
-            celestonoscuro: '#1394ad',
-            vino: '#80142f',
-            violetagrafito: '#3e2d4f',
-            lila: '#C587C5',
-            violaceoclaro: '#e0d1fa',
-
+                violeta: '#9676d8',
+                morado: '#6A1B9A',
+                fondo: '#FAF5FF',
+                bordo: '#a2263f',
+                celeste: '#0c6d99',
+                azul: '#1D3B6D',
+                berenjena: '#5c4554',
+                bordooscuro: '#552c5b',
+                violaceo: '#6a4b8e',
+                celestonoscuro: '#1394ad',
+                vino: '#80142f',
+                violetagrafito: '#3e2d4f',
+                lila: '#C587C5',
+                violaceoclaro: '#e0d1fa',
               },
               fontSize: {
                 '2xl': '1.5rem',
@@ -65,7 +59,7 @@
                 normal: 400,
                 medium: 500,
                 bold: 700,
-          },
+              },
               fontFamily: {
                 sans: ['Outfit', 'sans-serif'],
               },
@@ -73,13 +67,15 @@
           },
         };
       </script>
-
-<script>
-  if (!sessionStorage.getItem('usuarioLogueado')) {
-    window.location.href = 'login.html';
-  }
-</script>
     
+      <!-- Seguridad: redirección si no hay sesión -->
+      <script>
+        if (!sessionStorage.getItem('usuarioLogueado')) {
+          window.location.href = 'login.html';
+        }
+      </script>
+    
+      <!-- Animaciones -->
       <style>
         html {
           scroll-behavior: smooth;
@@ -104,11 +100,9 @@
           animation: fadeIn 1.2s ease-out 0.3s forwards;
         }
       </style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     </head>
+
+    
     
     <body class="bg-[#f9f7f4] text-[#222] font-sans pt-20"> <!-- Compensa altura del menú fijo -->
     
