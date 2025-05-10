@@ -81,7 +81,6 @@
       const user = document.getElementById('usuario').value.trim().toLowerCase();
       const pass = document.getElementById('password').value;
   
-      // Lista de usuarios válidos con sus contraseñas
       const usuarios = {
         admin: '123456',
         claradi: '654321',
@@ -94,9 +93,12 @@
       };
   
       if (usuarios[user] && usuarios[user] === pass) {
-        sessionStorage.setItem('usuarioLogueado', user); // guarda el acceso
-window.location.href = 'index.html'; // Redirige al HUB
-        
+        sessionStorage.setItem('usuarioLogueado', user);
+  
+        // Si venía de una URL con hash (ej. index.html#ecosistemas), lo conserva
+        const hash = window.location.hash;
+        window.location.href = 'index.html' + hash;
+  
       } else {
         alert('Usuario o contraseña incorrectos');
       }
@@ -104,8 +106,6 @@ window.location.href = 'index.html'; // Redirige al HUB
   </script>
 
   
- 
- 
 
 </body>
 </html>
