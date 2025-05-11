@@ -67,12 +67,14 @@
     </div>
 
     <!-- BOTÓN HAMBURGUESA -->
-    <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
-      <i class="fas fa-bars"></i>
-    </button>
 
+    <!-- BOTÓN HAMBURGUESA (visible en md y menores) -->
+<button id="menu-toggle" class="block lg:hidden text-white text-2xl focus:outline-none">
+  <i class="fas fa-bars"></i>
+</button>
+    
     <!-- MENU DESKTOP -->
-    <div id="menu-desktop" class="hidden lg:flex items-start gap-6 text-sm">
+<div id="menu-desktop" class="hidden lg:flex items-start gap-6 text-sm ml-auto">
     
       <a href="index1producto.html" class="hover:text-gray-300">Gestión del Diseño</a>
       <a href="index.html" class="hover:text-gray-300">Información</a>
@@ -96,7 +98,10 @@
   </div>
 
   <!-- MENU MOBILE/TABLET -->
-  <div id="menu-mobile" class="hidden flex-col gap-4 mt-4 md:hidden px-6 text-sm">
+
+  <!-- MENU MOBILE/TABLET -->
+<div id="menu-mobile" class="hidden flex-col gap-4 mt-4 lg:hidden px-6 text-sm">
+
     <a href="index1producto.html" class="block py-1 hover:text-gray-300">Gestión del Diseño</a>
     <a href="index.html" class="block py-1 hover:text-gray-300">Información</a>
     <a href="index1diagnostico.html" class="block py-1 hover:text-gray-300">Servicios</a>
