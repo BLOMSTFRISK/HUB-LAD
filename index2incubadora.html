@@ -381,19 +381,16 @@
 </footer>
 
 
-<!-- SCRIPT PARA MENÚ DESPLEGABLE -->
- <!-- JS PARA MOSTRAR/OCULTAR EL MENÚ MOBILE -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("menu-mobile");
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('menu-mobile');
 
-    btn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+    toggleBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
     });
   });
 </script>
-
 
 
 
