@@ -1,3 +1,4 @@
+
 .features {
     margin-top: 4rem;
 }
@@ -77,27 +78,28 @@
 
 }
 
-.features-grid {
+.modelo-incubadora {
+    margin: 0;
+  }
+
+  .features-grid {
     display: grid;
-    grid-template-columns: 1fr; /* 1 sola columna por defecto */
+    grid-template-columns: 1fr; /* Mobile */
     gap: 2rem;
     justify-items: center;
   }
   
-  /* Desde pantallas medianas en adelante (768px+) */
   @media (min-width: 768px) {
     .features-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
-  /* Desde pantallas grandes en adelante (1024px+) */
   @media (min-width: 1024px) {
     .features-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-
 
 @media (min-width: 768px) {
     .features-wrapper {
