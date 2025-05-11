@@ -61,26 +61,27 @@
 <body class="bg-white text-gray-800">
 
   <!-- NAV RESPONSIVE CON MENÚ DESPLEGABLE -->
+   <!-- NAV RESPONSIVE CON MENÚ DESPLEGABLE -->
 
 <nav class="fixed top-0 left-0 right-0 bg-[#3e2d4f] text-white shadow-md z-50 px-6 py-3 flex items-center justify-between">
-  <a href="#inicio" class="flex items-center gap-2 text-lg sm:text-xl font text-white hover:underline">
+  
+  <!-- Contenedor de logos bien a la izquierda -->
+  <div class="flex items-center gap-3">
+    <!-- Logo UNLa -->
+    <a href="https://www.unla.edu.ar" target="_blank" rel="noopener noreferrer">
+      <img src="images/Logo UNLA Blanco.png" alt="Logo UNLa" class="h-10 w-auto" />
+    </a>
 
-     <!-- Logo UNLa -->
-  <a href="https://www.unla.edu.ar" target="_blank" rel="noopener noreferrer">
-    <img src="images/Logo UNLA Blanco.png" alt="logo UNLa" class="h-10 w-auto" />
-  </a>
+    <!-- Logo LAD -->
+    <a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad" target="_blank" rel="noopener noreferrer">
+      <img src="images/LAD-logo Blanco.png" alt="Logo LAD" class="h-10 w-auto" />
+    </a>
 
-  <!-- Logo LAD -->
-  <a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad" target="_blank" rel="noopener noreferrer">
-    <img src="images/LAD-logo Blanco.png" alt="Logo LAD" class="h-10 w-auto" />
-  </a>
-
-  <!-- Logo HUB (link a home) -->
-  <a href="index.html">
-    <img src="images/Recurso 5BW.png" alt="Logo HUB DI UNLa" class="h-10 w-auto" />
-  </a>
-    
-  </a>
+    <!-- Logo HUB -->
+    <a href="index.html">
+      <img src="images/Recurso 5BW.png" alt="Logo HUB DI UNLa" class="h-10 w-auto" />
+    </a>
+  </div>
 
   <!-- Botón hamburguesa visible solo en sm y md -->
   <div class="lg:hidden">
@@ -91,7 +92,6 @@
 
   <!-- Menú visible en LG y desplegable en SM/MD -->
   <ul id="menu" class="hidden lg:flex lg:flex-row items-start lg:items-center gap-4 text-base font text-white">
-  
     <li><a href="#sobre" class="block w-full py-1 hover:text-lila">Gestión del Diseño</a></li>
     <li><a href="https://www.unla.edu.ar/laboratorio-de-diseno-lad" target="_blank" rel="noopener noreferrer" class="block w-full py-1 hover:text-lila">LAD</a></li>
     <li><a href="#estudios" class="block w-full py-1 hover:text-lila">Servicios</a></li>
