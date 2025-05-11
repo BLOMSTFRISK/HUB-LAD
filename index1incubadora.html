@@ -140,42 +140,50 @@
     <div class="mt-12">
       <h2 class="text-2xl font-bold text-white mb-6">Modelos de Incubacion disponibles</h2>
 
-<!-- Carrusel mejorado -->
-<div id="carousel"
-class="relative w-full h-56 overflow-hidden rounded-xl shadow-md mb-8 group">
+      <!-- Carrusel mejorado -->
+<div id="carousel" class="relative w-full h-56 overflow-hidden rounded-xl shadow-md mb-8 group mx-auto max-w-4xl">
 
-<div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out h-full w-[600%]"></div>
-<!-- Slide 1 -->
+  <!-- Slides -->
+  <div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out h-full w-[600%]">
+    <a href="modelo1.html" class="w-full sm:w-[16.6667%] h-full flex-shrink-0">
+      <img src="images/concursos.png" alt="Concursos" class="w-full h-full object-cover" />
+    </a>
+    <a href="modelo2.html" class="w-full sm:w-[16.6667%] h-full flex-shrink-0">
+      <img src="images/convocatorias.png" alt="Convocatorias" class="w-full h-full object-cover" />
+    </a>
+    <a href="modelo5.html" class="w-full sm:w-[16.6667%] h-full flex-shrink-0">
+      <img src="images/codigo abierto.jfif" alt="Código Abierto" class="w-full h-full object-cover" />
+    </a>
+    <a href="modelo6.html" class="w-full sm:w-[16.6667%] h-full flex-shrink-0">
+      <img src="images/emprendimiento.png" alt="Emprendimiento" class="w-full h-full object-cover" />
+    </a>
+    <a href="modelo4.html" class="w-full sm:w-[16.6667%] h-full flex-shrink-0">
+      <img src="images/llave en mano.jfif" alt="Llave en Mano" class="w-full h-full object-cover" />
+    </a>
+    <a href="modelo7.html" class="w-full sm:w-[16.6667%] h-full flex-shrink-0">
+      <img src="images/lanzamiento.jfif" alt="Lanzamiento" class="w-full h-full object-cover" />
+    </a>
+  </div>
 
-<a href="modelo1.html" class="w-[16.6667%] h-full flex-shrink-0">
-  <img src="images/concursos.png" alt="Concursos" class="w-full h-full object-cover" />
-</a>
+  <!-- Botones -->
+  <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-violetagrafito p-2 rounded-full shadow hover:bg-gray-200 z-10">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-violetagrafito p-2 rounded-full shadow hover:bg-gray-200 z-10">
+    <i class="fas fa-chevron-right"></i>
+  </button>
 
-<!-- Slide 2 -->
-<a href="modelo2.html" class="w-[16.6667%] h-full flex-shrink-0">
- <img src="images/convocatorias.png" alt="Código Abierto" class="w-full h-full object-cover" />
-</a>
-<!-- Slide 3 -->
-<a href="modelo5.html" class="w-[16.6667%] h-full flex-shrink-0">
- <img  src="images/codigo abierto.jfif" alt="Emprendimiento" class="w-full h-full object-cover" />
-</a>
-
-<!-- Slide 4 -->
-<a href="modelo6.html" class="w-[16.6667%] h-full flex-shrink-0">
-  <img src="images/emprendimiento.png" alt="Concursos" class="w-full h-full object-cover" />
- </a>
- <!-- Slide 5 -->
- <a href="modelo4.html" class="w-[16.6667%] h-full flex-shrink-0">
-  <img src="images/llave en mano.jfif" alt="Código Abierto" class="w-full h-full object-cover" />
- </a>
- <!-- Slide 6 -->
- <a href="modelo7.html" class="w-[16.6667%] h-full flex-shrink-0">
-  <img  src="images/lanzamiento.jfif" alt="Emprendimiento" class="w-full h-full object-cover" />
- </a>
+  <!-- Puntos -->
+  <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+    <span class="dot w-3 h-3 bg-white rounded-full cursor-pointer opacity-50"></span>
+    <span class="dot w-3 h-3 bg-white rounded-full cursor-pointer opacity-50"></span>
+    <span class="dot w-3 h-3 bg-white rounded-full cursor-pointer opacity-50"></span>
+    <span class="dot w-3 h-3 bg-white rounded-full cursor-pointer opacity-50"></span>
+    <span class="dot w-3 h-3 bg-white rounded-full cursor-pointer opacity-50"></span>
+    <span class="dot w-3 h-3 bg-white rounded-full cursor-pointer opacity-50"></span>
+  </div>
 </div>
 
-      
-    
   </div>
 
   <!-- FOOTER -->
@@ -192,5 +200,39 @@ class="relative w-full h-56 overflow-hidden rounded-xl shadow-md mb-8 group">
     </p>
   </footer>
 
+  <!-- Scripts de JavaScript para el carrusel -->
+  <script>
+    const inner = document.getElementById("carousel-inner");
+    const dots = document.querySelectorAll(".dot");
+    const totalSlides = dots.length;
+    let index = 0;
+  
+    function updateCarousel() {
+      inner.style.transform = `translateX(-${(100 / totalSlides) * index}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("opacity-100", i === index);
+        dot.classList.toggle("opacity-50", i !== index);
+      });
+    }
+  
+    document.getElementById("next").addEventListener("click", () => {
+      index = (index + 1) % totalSlides;
+      updateCarousel();
+    });
+  
+    document.getElementById("prev").addEventListener("click", () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    });
+  
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        index = i;
+        updateCarousel();
+      });
+    });
+  
+    updateCarousel(); // inicializar
+  </script>
 </body>
 </html>
