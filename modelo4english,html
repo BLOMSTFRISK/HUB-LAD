@@ -54,7 +54,7 @@
     </a>
   </div>
 
-  <header class="bg-violaceo text-white py-4 px-6 flex items-center justify-end">
+  <header class="bg-violetagrafito text-white py-4 px-6 flex items-center justify-end">
     <div class="flex items-center gap-4 flex-wrap justify-end">
       <a href="index.html">
         <img src="./images/Recurso 5BW.png" alt="HUB DI UNLa Logo" class="h-14 w-auto max-w-[100px] sm:max-w-none object-contain" />
