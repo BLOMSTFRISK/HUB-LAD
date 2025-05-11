@@ -55,40 +55,51 @@
 
 <!-- NAV -->
 <nav class="bg-[#3e2d4f] text-white px-6 py-4 shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
-
-    <!-- Logos -->
-    <div class="flex items-center space-x-3">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    
+    <!-- IZQUIERDA: LOGOS -->
+    <div class="flex items-center gap-3">
       <img src="images/Logo UNLA Blanco.png" alt="logo UNLa" class="h-10 w-auto" />
       <img src="images/LAD-logo Blanco.png" alt="Logo LAD" class="h-10 w-auto" />
       <img src="images/Recurso 5BW.png" alt="Logo HUB DI UNLa" class="h-10 w-auto" />
     </div>
 
-    <!-- Botón hamburguesa (solo mobile) -->
-    <button id="menu-toggle" class="block sm:hidden text-white text-2xl focus:outline-none">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Menú -->
-    <div id="menu" class="hidden w-full sm:flex sm:items-center sm:space-x-6 sm:w-auto mt-4 sm:mt-0 flex-col sm:flex-row gap-4 text-base font text-white">
+    <!-- DERECHA: MENÚ -->
+    <div class="hidden md:flex items-center gap-6">
       <a href="index1producto.html" class="hover:text-gray-300">Gestión del Diseño</a>
       <a href="index.html" class="hover:text-gray-300">Información</a>
       <a href="index1diagnostico.html" class="hover:text-gray-300">Servicios</a>
-      <a href="mailto:incubadoradetifypppunla@gmail.com?subject=Consulta%20sobre%20la%20incubadora" class="flex items-center space-x-1 hover:text-gray-300">
-        <i class="fas fa-envelope"></i><span>Contacto</span>
+      <a href="mailto:incubadoradetifypppunla@gmail.com" class="flex items-center gap-1 hover:text-gray-300">
+        <i class="fas fa-envelope"></i> <span>Contacto</span>
       </a>
-      <!-- Idiomas -->
-      <div class="flex gap-2 pt-2 sm:pt-0">
-        <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
-          <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
-          <span>ES</span>
-        </a>
-        <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
-          <img src="./images/us.png" alt="English" class="w-4 h-4 rounded-sm" />
-          <span>EN</span>
-        </a>
-      </div>
+      <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+        <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
+      </a>
+      <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+        <img src="./images/us.png" alt="English" class="w-4 h-4 rounded-sm" />
+      </a>
     </div>
+
+    <!-- HAMBURGER EN MOBILE -->
+    <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- MENÚ EN MOBILE -->
+  <div id="menu" class="hidden flex-col md:hidden px-6 mt-4 gap-2">
+    <a href="index1producto.html" class="block py-1">Gestión del Diseño</a>
+    <a href="index.html" class="block py-1">Información</a>
+    <a href="index1diagnostico.html" class="block py-1">Servicios</a>
+    <a href="mailto:incubadoradetifypppunla@gmail.com" class="block py-1">Contacto</a>
+    <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100 w-max">
+      <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
+      Español
+    </a>
+    <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100 w-max">
+      <img src="./images/us.png" alt="English" class="w-4 h-4 rounded-sm" />
+      English
+    </a>
   </div>
 </nav>
 
@@ -169,7 +180,7 @@
       <!-- Tarjeta 1 -->
       <div class="bg-[#e0d1fa] p-6 rounded-2xl shadow flex flex-col justify-between min-h-[600px]">
         <div>
-          <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md inline-block mb-4">MODELO 1: CONCURSO</h3>
+          <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md mb-4 w-full text-center">MODELO 1: CONCURSO</h3>
           <img src="images/concursos.png" alt="Concurso" class="w-full h-40 object-cover rounded-md shadow mb-4" />
           <p class="text-sm roboto text-gray-700 text-justify">
             <p>
@@ -190,7 +201,7 @@
       <!-- Tarjeta 2 -->
       <div class="bg-[#e0d1fa] p-6 rounded-2xl shadow flex flex-col justify-between min-h-[600px]">
         <div>
-          <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md inline-block mb-4">MODELO 2: CONVOCATORIAS</h3>
+          <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md mb-4 w-full text-center">MODELO 2: CONVOCATORIAS</h3>
           <img src="images/convocatorias.png" alt="Convocatorias" class="w-full h-40 object-cover rounded-md shadow mb-4" />
           <p class="text-sm roboto text-gray-700 text-justify">
             <p>
@@ -211,7 +222,7 @@
       <!-- Tarjeta 3 -->
       <div class="bg-[#e0d1fa] p-6 rounded-2xl shadow flex flex-col justify-between min-h-[600px]">
         <div>
-          <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md inline-block mb-4">MODELO 3: CODIGO ABIERTO</h3>
+          <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md mb-4 w-full text-center">MODELO 3: CODIGO ABIERTO</h3>
           <img src="images/codigo abierto.jfif" alt="Llave en Mano" class="w-full h-40 object-cover rounded-md shadow mb-4" />
           <p class="text-sm roboto text-gray-700 text-justify">
             <p>
@@ -242,7 +253,7 @@
    <!-- Tarjeta 1 -->
    <div class="bg-[#e0d1fa] p-6 rounded-2xl shadow flex flex-col justify-between min-h-[600px]">
     <div>
-      <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md inline-block mb-4">MODELO 4: EMPRENDIMIENTO</h3>
+      <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md mb-4 w-full text-center">MODELO 4: EMPRENDIMIENTO</h3>
       <img src="images/emprendimiento.png" alt="Concurso" class="w-full h-40 object-cover rounded-md shadow mb-4" />
       <p class="text-sm roboto text-gray-700 text-justify">
         <p>
@@ -263,7 +274,7 @@
   <!-- Tarjeta 2 -->
   <div class="bg-[#e0d1fa] p-6 rounded-2xl shadow flex flex-col justify-between min-h-[600px]">
     <div>
-      <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md inline-block mb-4">MODELO 5: LLAVE EN MANO</h3>
+      <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md mb-4 w-full text-center">MODELO 5: LLAVE EN MANO</h3>
       <img src="images/llave en mano.jfif" alt="Convocatorias" class="w-full h-40 object-cover rounded-md shadow mb-4" />
       <p class="text-sm roboto text-gray-700 text-justify">
         <p>
@@ -284,7 +295,7 @@
   <!-- Tarjeta 3 -->
   <div class="bg-[#e0d1fa] p-6 rounded-2xl shadow flex flex-col justify-between min-h-[600px]">
     <div>
-      <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md inline-block mb-4">MODELO 6: LANZAMIENTO</h3>
+      <h3 class="text-lg font-bold bg-[#603c7a] text-white px-4 py-2 rounded-md mb-4 w-full text-center">MODELO 6: LANZAMIENTO</h3>
       <img src="images/lanzamiento.jfif" alt="Llave en Mano" class="w-full h-40 object-cover rounded-md shadow mb-4" />
       <p class="text-sm roboto text-gray-700 text-justify">
         <p>
