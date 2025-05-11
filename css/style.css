@@ -342,3 +342,14 @@ html {
         max-width: 300px;
     }
 }
+
+.features-grid {
+  align-items: stretch;
+}
+
+/* Asegura que todas las tarjetas tengan la misma altura en columnas */
+.modelo-incubadora {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
