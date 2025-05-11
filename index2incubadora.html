@@ -84,6 +84,44 @@
 
 
 <body class="bg-white text-gray-800">
+
+  <!-- NAV -->
+<nav class="bg-[#3e2d4f] text-white px-6 py-4 flex justify-between items-center shadow-md sticky top-0 z-50">
+  <!-- Logos -->
+  <div class="flex items-center space-x-4">
+    <img src="images/Logo UNLA Blanco.png" alt="logo UNLa" class="h-10 w-auto" />
+    <img src="images/LAD-logo Blanco.png" alt="Logo LAD" class="h-10 w-auto" />
+    <img src="images/Recurso 5BW.png" alt="Logo HUB DI UNLa" class="h-10 w-auto" />
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <button id="menu-toggle" class="sm:hidden text-white text-2xl focus:outline-none">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Menú de navegación -->
+  <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-4 text-base font text-white mt-4 sm:mt-0 absolute sm:static top-full left-0 w-full sm:w-auto bg-[#3e2d4f] sm:bg-transparent p-4 sm:p-0 z-40">
+    <li><a href="index1producto.html" class="block py-2 sm:py-0 hover:text-gray-300">Gestión del Diseño</a></li>
+    <li><a href="index.html" class="block py-2 sm:py-0 hover:text-gray-300">Información</a></li>
+    <li><a href="index1diagnostico.html" class="block py-2 sm:py-0 hover:text-gray-300">Servicios</a></li>
+    <li>
+      <a href="mailto:incubadoradetifypppunla@gmail.com?subject=Consulta%20sobre%20la%20incubadora" class="flex items-center space-x-1 block py-2 sm:py-0 hover:text-gray-300">
+        <i class="fas fa-envelope"></i><span>Contacto</span>
+      </a>
+    </li>
+    <li class="flex gap-2 pt-2 sm:pt-0">
+      <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+        <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
+        <span>Español</span>
+      </a>
+      <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+        <img src="./images/us.png" alt="English" class="w-4 h-4 rounded-sm" />
+        <span>English</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
   <!-- HERO SECTION -->
   <section class="relative h-[50vh] bg-cover bg-center bg-no-repeat" style="background-image: url('images/WhatsApp Image 2023-09-28 at 7.02.46 PM.jpeg');">
     <div class="absolute inset-0 bg-white bg-opacity-70"></div>
@@ -343,3 +381,13 @@
     2023 <a href="#" class="underline hover:text-white">HUB de Incubación</a>, Diseño WEB
   </p>
 </footer>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
