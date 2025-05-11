@@ -353,3 +353,8 @@ html {
   flex-direction: column;
   height: 100%;
 }
+
+.contenido-modelo {
+  flex-grow: 1;
+  overflow-y: auto;
+}
